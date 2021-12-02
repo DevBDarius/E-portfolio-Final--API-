@@ -5,4 +5,26 @@
 // t - input title, output movie details
 // page - input N, output Nth page of search result
 
-console.log('hi! JS works');
+
+//KNOWN ISSUES
+// 1. printSearchQuery activates twice when pressing search
+
+
+let input;
+
+function handleSearchQuery() {
+  input = document.querySelector(".main__searchbox--input");
+  console.log('Query activated: ' + input.value);
+
+  input.value ? activateSearch() : console.log('Empty query; doing nothing');
+}
+
+function activateSearch() {
+  
+}
+
+function moveSearchbarUp() {
+  document.querySelector('.main__wrapper').classList += ' move-up'
+}
+
+

@@ -16,8 +16,37 @@
 }
 
 .main__searchbox {
+  margin-top: 20px;
+  border: 3px solid;
+  border-radius: 99px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.main__searchbox--btn,
+.main__searchbox--input {
+  font-size: 24px;
+  padding: 8px 16px;
 }
 
 .main__searchbox--input {
-  font-size: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.main__searchbox--input:focus-visible {
+  outline: none;
+}
+
+.main__searchbox--btn {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.move-up {
+  transform: translateY(100px);
 }

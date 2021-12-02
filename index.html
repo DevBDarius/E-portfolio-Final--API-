@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JobAPI</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/44057641c5.js" crossorigin="anonymous"></script>
   <script src="js.js"></script>
 </head>
 <body>
@@ -14,8 +15,19 @@
       Search any movie, instantly
     </h1>
     <div class="main__searchbox">
-      <input class="main__searchbox--input" type="text" name="Movie" id="" placeholder="Try 'Fast and Furious'">
+      <input size="28" class="main__searchbox--input" type="text" placeholder="Fast and Furious" onchange="handleSearchQuery(event)" required>
+      <button class="main__searchbox--btn" type="submit">
+        <i class="fas fa-search"></i>
+      </button>
     </div>
   </main>
+
+  <div class="movie-list">
+    <div class="movie">
+      <img src="./default-movie.png" alt="">
+      <h3>TITLE (YEAR)</h3>
+      <span class="movie-type">TYPE</span>
+    </div>
+  </div>
 </body>
 </html>
