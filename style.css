@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  transition: all 500ms ease-out;
 }
 
 .main__searchbox {
@@ -48,5 +49,44 @@
 }
 
 .move-up {
-  transform: translateY(100px);
+  height: 25vh;
 }
+
+
+/* 
+
+Movie Container
+
+*/
+
+.movie-list {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.movie {
+  padding: 20px;
+  margin: 25px;
+  max-width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.movie img {
+  margin-bottom: 20px;
+}
+
+/* 
+.movie h3 {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.movie-type {
+  font-size: 14px;
+  color: #aaa
+}
+

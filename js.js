@@ -13,14 +13,16 @@
 let input;
 
 function handleSearchQuery() {
-  input = document.querySelector(".main__searchbox--input");
-  console.log('Query activated: ' + input.value);
+  input = document.querySelector(".main__searchbox--input").value;
+  console.log('Query activated: ' + input);
 
-  input.value ? activateSearch() : console.log('Empty query; doing nothing');
+  input ? activateSearch() : console.log('Empty query; doing nothing');
 }
 
-function activateSearch() {
-  
+function activateSearch(searchQuery) {
+  moveSearchbarUp();
+
+
 }
 
 function moveSearchbarUp() {
