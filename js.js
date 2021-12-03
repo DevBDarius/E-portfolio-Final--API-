@@ -31,10 +31,10 @@ function moveSearchbarUp() {
 }
 
 async function renderMovies(searchQuery) {
-  // const data = await fetchAndConvertFromAPI(searchQuery);
+  const data = await fetchAndConvertFromAPI(searchQuery);
 
   // TESTING
-  const data = fakeData;
+  // const data = fakeData;
   // console.log(data);
 
   // console.log(data.Search);
@@ -45,7 +45,7 @@ async function renderMovies(searchQuery) {
     console.log(e.Poster);
     return `<div class="movie">
       <img src="${getPoster(e.Poster)}" alt="">
-      <h3>${e.Title} (${e.Year}</h3>
+      <h3>${e.Title} (${e.Year})</h3>
       <span class="movie-type">${e.Type}</span>
     </div>`
   }).join('')
