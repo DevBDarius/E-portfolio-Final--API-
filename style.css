@@ -48,7 +48,7 @@
   align-items: center;
 }
 
-.move-up {
+.move-up .main__wrapper {
   height: 25vh;
 }
 
