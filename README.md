@@ -1,4 +1,4 @@
-# [E-portfolio Final API](https://devbdarius.github.io/E-portfolio-Final--API-/)
+# [SMDb in JS](https://devbdarius.github.io/smdb-in-JS/)
 
 ### The final project of the E-Portfolio FS section
 
